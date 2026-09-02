@@ -95,7 +95,7 @@ const SubjectGrid: React.FC<SubjectGridProps> = ({ subjects, setSubjects }) => {
                       type="number"
                       step="0.1"
                       min="0"
-                      max="25"
+                      max="100"
                       value={grade.score ?? ''}
                       onChange={e => handleGradeChange(subject.id, grade.month, e.target.value)}
                       className={`w-16 p-1.5 text-center bg-gray-100 dark:bg-gray-700 rounded-md border-transparent focus:ring-2 focus:ring-blue-500 focus:border-transparent ${getScoreColor(grade.score)}`}
