@@ -20,7 +20,7 @@ export const getStudySuggestions = async (subjects: Subject[]): Promise<string> 
 
   const prompt = `
     Você é um assistente acadêmico virtual e coach de estudos. O seu objetivo é ajudar um aluno a identificar pontos de melhoria com base em suas notas.
-    Analise os dados a seguir, que contêm as matérias e as notas mensais de um aluno. As notas válidas vão de 0 a 25.
+    Analise os dados a seguir, que contêm as matérias e as notas mensais de um aluno. As notas válidas vão de 0 a 100.
     Identifique as 2-3 matérias com as médias mais baixas e que precisam de mais atenção.
     Para cada uma dessas matérias, forneça uma sugestão curta (2-3 frases), motivacional e prática sobre como o aluno pode melhorar.
     Formate sua resposta usando markdown. Use títulos para cada matéria e listas para as sugestões.
