@@ -11,4 +11,4 @@ export const MONTHS_FULL = [
 export const SEMESTER_1_MONTHS = ["Fev", "Mar", "Abr", "Mai", "Jun"];
 export const SEMESTER_2_MONTHS = ["Ago", "Set", "Out", "Nov", "Dez"];
 
-export const PASSING_GRADE = 15;
+export const PASSING_GRADE = 60;
