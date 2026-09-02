@@ -28,7 +28,7 @@ const SubjectGrid: React.FC<SubjectGridProps> = ({ subjects, setSubjects }) => {
   };
 
   const handleGradeChange = (subjectId: string, month: string, score: string) => {
-    const newScore = score === '' ? null : Math.max(0, Math.min(25, parseFloat(score)));
+    const newScore = score === '' ? null : Math.max(0, Math.min(100, parseFloat(score)));
     setSubjects(prev => 
       prev.map(subject => 
         subject.id === subjectId
